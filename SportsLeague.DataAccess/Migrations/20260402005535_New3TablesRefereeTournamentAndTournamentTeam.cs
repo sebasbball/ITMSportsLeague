@@ -5,10 +5,8 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace SportsLeague.DataAccess.Migrations
 {
-    /// <inheritdoc />
     public partial class New3TablesRefereeTournamentAndTournamentTeam : Migration
     {
-        /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
