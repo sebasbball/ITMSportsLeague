@@ -65,4 +65,12 @@ app.UseHttpsRedirection();
 app.UseAuthorization();
 app.MapControllers();
 
+// ── Seeder ──
+using (var scope = app.Services.CreateScope())
+{
+    var context = scope.ServiceProvider
+        .GetRequiredService<SportsLeague.DataAccess.Context.LeagueDbContext>();
+    await SportsLeague.DataAccess.Seeders.DataSeeder.SeedAsync(context);
+}
+
 app.Run();

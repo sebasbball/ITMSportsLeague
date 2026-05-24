@@ -18,7 +18,5 @@
         public ICollection<Match> HomeMatches { get; set; } = new List<Match>();
         // Partidos como visitante
         public ICollection<Match> AwayMatches { get; set; } = new List<Match>();
-        public int TeamId { get; internal set; }
-        public object Team { get; internal set; }
     }
 }

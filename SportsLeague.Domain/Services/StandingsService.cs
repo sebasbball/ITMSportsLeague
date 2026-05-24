@@ -66,8 +66,8 @@ public class StandingsService : IStandingsService
         // Calcular standings para cada equipo
         var standings = tournamentTeams.Select(tt =>
         {
-            var teamId = tt.TeamId;
-            var teamName = tt.Team.Name;
+            var teamId = tt.Id;
+            var teamName = tt.Name;
 
             // Partidos como local con resultado
             var homeMatches = matches
